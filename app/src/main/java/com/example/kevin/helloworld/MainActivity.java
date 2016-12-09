@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     int counter = 0;
     int counter2 = 0;
     int animation = 0;
+    int multiplier = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,9 +25,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void prayer(View v){
-        counter += 1*counter2;
+        counter += 1+multiplier;
         counter2 +=1;
         animation +=1;
+        multiplier += 1/2;
 
         TextView counts=(TextView) findViewById(R.id.counts)  ;
         TextView multiplier=(TextView) findViewById(R.id.multiplierText)  ;
